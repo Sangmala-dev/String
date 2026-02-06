@@ -1,0 +1,21 @@
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		String sentence = sc.nextLine();
+		
+		 // Split sentence into words
+		String words[] = sentence.split(" ");
+		
+		// Reverse words
+		String reversedSentance = "";
+		for(int i=words.length-1; i>=0; i=i-1){
+		    reversedSentance += words[i];
+		    if(i!=0)
+		        reversedSentance += " ";
+		}
+		System.out.println(reversedSentance);
+		
+	}
+}
