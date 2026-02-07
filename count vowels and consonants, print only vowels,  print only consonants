@@ -1,0 +1,68 @@
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		String str = sc.nextLine().toLowerCase();
+		int vowel = 0, consonants = 0;
+		for(int i=0; i<str.length(); i=i+1){
+		    char ch = str.charAt(i);
+		    
+		    if(ch >= 'a' && ch <= 'z'){
+		        if(ch =='i' || ch=='o' || ch =='u'|| ch == 'a' || ch == 'e')
+		        vowel++;
+		        else
+		        consonants++;
+		    }
+		}
+		System.out.println("vowel: "+vowel);
+		System.out.println("consonants: "+consonants);
+		
+	}
+}
+
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		String str = sc.nextLine().toLowerCase();
+		int vowel = 0, consonants = 0;
+		
+		 System.out.print("Vowels: "); 
+		 
+		for(int i=0; i<str.length(); i=i+1){
+		    char ch = str.charAt(i);
+		    
+		   
+		    if(ch >= 'a' && ch <= 'z'){
+		        if(ch =='i' || ch=='o' || ch =='u'|| ch == 'a' || ch == 'e')
+		        System.out.print(ch+" ");
+		    }
+		}
+	
+
+
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		String str = sc.nextLine().toLowerCase();
+		int vowel = 0, consonants = 0;
+		
+		 System.out.print("Consonants: "); 
+		 
+		for(int i=0; i<str.length(); i=i+1){
+		    char ch = str.charAt(i);
+		    
+		   
+		    if(ch >= 'a' && ch <= 'z'){
+		        if(!(ch =='i' || ch=='o' || ch =='u'|| ch == 'a' || ch == 'e'))
+		        System.out.print(ch+" ");
+		    }
+		}
+	
+		
+	}
+}
